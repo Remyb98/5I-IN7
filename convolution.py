@@ -1,3 +1,4 @@
+# -*-coding:Latin-1 -*
 # TD CONVOLUTION
 # TEAM 4
 # Remy BARBERET - Pierrot CAVALIER - Leo CHARDON - Gwennael FRANCOIS 
