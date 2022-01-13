@@ -27,6 +27,8 @@ for i in range(3):
 	cv2.circle(img, (100, 100), 100, (0, 0, 0), 3)
 	# cv2.putText(image, text, org, font, fontScale, color[, thickness[, lineType[, bottomLeftOrigin]]])
 	cv2.putText(img, '5I-IN7', (50, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 1, cv2.LINE_AA)
+	# cv2.rectangle(image, start_point, end_point, color, thickness)
+	cv2.rectangle(img, (0, 0), (200, 200), (0, 0, 0), 5)
 
 	# On affiche l'image
 	cv2.imshow(str(i), img)
