@@ -50,6 +50,10 @@ def filter_image(image):
     
     return img, img2, img_sobel, img_blur#, img_bil
 
+#Verification des arguments
+if len(sys.argv) < 2:
+    print("Usage:\npython3 conversion.py image path/to/image.png \nOR\npython3 conversion.py video path/to/video.mp4\nOR\npython3 conversion.py webcam")
+    exit(1)
 
 if sys.argv[1] not in ["image", "video", "webcam"]:
     print("Usage:\npython convulution.py image path/to/image.png \nOR\npython convolution.py video path/to/video.mp4\nOR\npython convolution.py webcam")

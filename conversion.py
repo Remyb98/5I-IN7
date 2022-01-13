@@ -23,14 +23,19 @@ def filter_image(image):
         for y in range(hauteur):
 	# On modifie chaque pixel avec la formule donnée
             r,v,b = img[x,y]
-            img[x,y] = (0.2989*r, 0.5870*v, 0.1140*b)
+            img[x,y] = 0.2989*r + 0.5870* + 0.1140*b
 	'''
 
     return img
 
 
+#Verification des arguments
+if len(sys.argv) < 2:
+    print("Usage:\npython3 conversion.py image path/to/image.png \nOR\npython3 conversion.py video path/to/video.mp4\nOR\npython3 conversion.py webcam")
+    exit(1)
+
 if sys.argv[1] not in ["image", "video", "webcam"]:
-    print("Usage:\npython convulution.py image path/to/image.png \nOR\npython convolution.py video path/to/video.mp4\nOR\npython convolution.py webcam")
+    print("Usage:\npython3 conversion.py image path/to/image.png \nOR\npython3 conversion.py video path/to/video.mp4\nOR\npython3 conversion.py webcam")
     exit(1)
 
 # Image
